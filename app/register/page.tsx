@@ -19,9 +19,9 @@ const RegisterPage = () => {
 
   const handleSubmit = async (event: any) => {
     event.preventDefault();
-    // Handle registration logic here
+
     const validateEmail = (email: string) => {
-      const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]/;
+      const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]/;
       return emailRegex.test(email);
     };
     if (!validateEmail(email)) {
